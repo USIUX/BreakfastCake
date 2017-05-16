@@ -1,0 +1,403 @@
+body {
+  background-color: $white;
+  color: $dark-gray;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+// Brand
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+h1, h2, h3, h4 {
+  border-bottom: 1px solid $light-gray;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 21px;
+  margin-bottom: 1rem;
+}
+h4 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+h5 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.footnote {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+// Forms
+.usi-form-group {
+  position: relative;
+  margin-bottom: 1rem;
+
+  label, input[type="text"] {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"], textarea {
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid $mid-gray;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    position: relative;
+
+    &[disabled] {
+      background-color: $light-gray;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px 0 $blue-muted-2;
+    }
+  }
+
+  &.input-warning {
+
+    input {
+      border-color: $dark-orange;
+    }
+
+    &:after {
+      color: $dark-orange;
+      content: '\f071';
+    }
+  }
+
+  &.input-error {
+
+    input {
+      border-color: $dark-red;
+    }
+
+    &:after {
+      color: $dark-red;
+      content: '\f06a';
+    }
+  }
+
+  &.input-success {
+
+    input {
+      border-color: $dark-green;
+    }
+
+    &:after {
+      color: $dark-green;
+      content: '\f058';
+    }
+  }
+
+  &.input-warning:after, &.input-error:after, &.input-success:after {
+    font-family: 'FontAwesome';
+    display: block;
+    position: absolute;
+    right: 60%;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 42px;
+    font-size: 20px;
+  }
+
+  &.check {
+    input {
+      display: none;
+
+      & + label {
+        color: $white;
+        border: 1px solid $mid-gray;
+        border-radius: 3px;
+        padding: 2px;
+      }
+
+      &:checked + label {
+        background-color: $dark-gray;
+      }
+    }
+
+    label {
+      display: inline-block;
+    }
+  }
+
+  &.radio {
+    input {
+      display: none;
+
+      & + label {
+        background-color: $white;
+        border: 1px solid $mid-gray;
+        border-radius: 100%;
+        padding: 9px;
+      }
+
+      &:checked + label {
+        box-shadow: 0 0 0 5px $mid-gray2 inset;
+      }
+    }
+
+    label {
+      display: inline-block;
+    }
+  }
+
+  &.highlight {
+    border: 1px solid $mid-gray;
+    padding: 20px;
+
+    input:checked + label {
+      box-shadow: 0 0 0 5px $dark-blue inset;
+    }
+
+    input:checked + label + label {
+      font-weight: bold;
+    }
+
+    input:checked + label + label:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: $blue-muted-1;
+    }
+  }
+}
+
+.usi-horizontal-select {
+  border: 1px solid $mid-gray;
+  border-radius: 3px;
+  display: table;
+  @extend .clearfix;
+
+  input {
+    display: none;
+
+    &:checked + label {
+      background-color: $dark-blue;
+      color: $white;
+    }
+  }
+
+  label {
+    line-height: 38px;
+    background-color: $white;
+    padding: 0 20px;
+    border-right: 1px solid $mid-gray;
+    color: $mid-gray;
+    display: block;
+    float: left;
+
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+}
+
+// Buttons
+button.usi-button {
+  color: $white;
+  background-color: $primary-blue;
+  border: 1px solid $white;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 0 20px 20px 0;
+
+  &.small {
+    padding: 9px;
+  }
+
+  &.large {
+    padding: 19px;
+    font-size: 16px;
+  }
+
+  &[disabled="disabled"] {
+    background-color: $blue-muted-2;
+  }
+
+  &.secondary {
+    background-color: $white;
+    color: $primary-blue;
+    border-color: currentColor;
+
+    &[disabled="disabled"] {
+      color: $blue-muted-3;
+    }
+
+    &.icon {
+      i {
+        background-color: $white;
+        color: $primary-blue;
+        border-right: 1px solid $primary-blue;
+      }
+
+      &.right i {
+        border-left: 1px solid $primary-blue;
+        border-right: none;
+      }
+
+    }
+  }
+
+  &.icon {
+    padding: 0;
+    overflow: hidden;
+
+    i {
+      background-color: $dark-blue;
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    i {
+      width: 44px;
+      line-height: 38px;
+    }
+
+    span {
+      padding: 12px;
+    }
+
+    &.small i {
+      width: 33px;
+      line-height: 33px;
+    }
+    &.small span {
+      padding: 9px;
+    }
+
+    &.large i {
+      line-height: 41px;
+    }
+
+    &.right {
+      i {
+        float: right;
+
+      }
+    }
+  }
+}
+
+// Tables
+
+table.usi-table {
+  border: 1px solid $mid-gray;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+
+  th {
+    padding: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid $mid-gray;
+    font-weight: 600;
+  }
+
+  td {
+    border: 1px solid $mid-gray;
+    padding: 1rem;
+  }
+
+  .borderless {
+    border-color: transparent;
+  }
+
+  tr:hover td {
+    background-color: $light-gray;
+  }
+}
+
+// Navigation
+
+header.usi-header {
+  line-height: 65px;
+  background-color: $darker-gray;
+  color: $white;
+  display: flex;
+
+  & > div {
+    padding: 0 20px;
+  }
+}
+
+// Notifications
+
+.usi-notification {
+  color: $white;
+  line-height: 50px;
+  padding: 0 20px;
+  box-shadow: 0 2px 3px 0 $mid-gray;
+  margin-bottom: 2rem;
+
+  &.error {
+    background-color: $dark-red;
+  }
+
+  &.warning {
+    background-color: $dark-orange;
+  }
+
+  &.info {
+    background-color: $blue-muted-3;
+  }
+
+  & > span {
+    margin-left: 30px;
+  }
+
+  .close {
+    float: right;
+  }
+
+  .fa {
+    font-size: 24px;
+    line-height: 50px;
+  }
+}

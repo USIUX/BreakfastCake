@@ -1,0 +1,45 @@
+label {
+  display: inline-block;
+}
+
+.faux-dropdown {
+  width: 200px;
+  height: 2rem;
+  display: block;
+  border: 1px solid $mid-gray;
+  position: relative;
+
+  &:after {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $white;
+    width: 30px;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-left: 1px solid $mid-gray;
+  }
+
+  & + input.colorpicker {
+    display: none;
+  }
+
+
+}
+
+.color-scheme {
+  li {
+    border: 1px solid $mid-gray;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.side-by-side {
+  display: flex;
+}

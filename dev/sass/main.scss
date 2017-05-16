@@ -1,0 +1,157 @@
+@import 'reset';
+@import 'variables';
+@import 'font-awesome-4.7.0/scss/font-awesome';
+@import 'brand';
+@import 'colorpicker';
+
+
+
+
+// Style guide layout
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    display: flex;
+}
+
+header.sg-layout {
+  background-color: $darker-gray;
+  color: $white;
+  height: 105px;
+  line-height: 105px;
+  margin-bottom: 40px;
+  display: flex;
+
+  .container {
+    align-items: center;
+
+    & > * {
+      margin-right: 2rem;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .fa {
+    float: right;
+  }
+
+}
+
+nav.sg-layout {
+  width: 275px;
+
+
+  ul {
+    list-style-type: none;
+
+    li {
+      padding: 10px 0;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &.active {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+main.usi-brand {
+  section {
+    margin-bottom: 2rem;
+  }
+
+  width: calc(100% - 275px);
+}
+
+.palette-group {
+  @extend .clearfix;
+}
+
+.palette-example {
+  float: left;
+  width: 200px;
+  height: 150px;
+  border: 1px solid $mid-gray;
+  margin-right: 20px;
+
+  &.dark-purple {
+    background-color: $dark-purple;
+  }
+  &.mid-purple {
+    background-color: $mid-purple;
+  }
+  &.light-purple {
+    background-color: $light-purple;
+  }
+  &.accent-purple {
+    background-color: $accent-purple;
+  }
+}
+
+.contrasting-bg {
+  background-color: $dark-blue;
+  padding: 30px;
+  margin-bottom: 1rem;
+}
+
+.code-container {
+  & > label {
+    display: block;
+    background-color: $dark-gray;
+    color: $white;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background-color: $mid-gray2;
+      font-weight: bold;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+  .usi-accordion-toggle {
+    display: none;
+
+    &:checked + .snippit {
+      height: auto;
+      padding: 1rem;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+  code.snippit {
+    padding: 0;
+    background-color: $darker-gray;
+    color: $white;
+    display: block;
+    margin-bottom: 1rem;
+    height: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+
+
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

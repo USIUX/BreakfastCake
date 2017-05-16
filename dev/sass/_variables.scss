@@ -1,0 +1,87 @@
+// Fonts
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.ttf') format('truetype');
+}
+
+// Color palette
+
+// Primary
+
+// Blue shades
+$primary-blue: #0067b1;
+$dark-blue: #005ea6;
+$light-blue: #47b3ff;
+
+// Muted blue shades
+$blue-muted-1: #d6eeff;
+$blue-muted-2: #99c3e3;
+$blue-muted-3: #a0b2be;
+
+// Gray shades
+$white: #fff;
+$lightest-gray: #f4f5f5;
+$light-gray: #d8d9da;
+$mid-gray: #acacac;
+$mid-gray2: #717073;
+$dark-gray: #515152;
+$darker-gray: #363636;
+$darkest-gray: #292829;
+
+// Secondary
+$dark-purple: #5f2a57;
+$mid-purple: #bb63ad;
+$light-purple: #e0b8da;
+$accent-purple: #f3e3f0;
+
+$dark-orange: #f37520;
+$mid-orange: #f8ab77;
+$light-orange: #fcdbc5;
+$accent-orange: #fef3ec;
+
+$dark-green: #6aa489;
+$mid-green: #9ac1af;
+$light-green: #cce0d7;
+$accent-green: #f2f7f5;
+
+$dark-red: #ef4836;
+$mid-red: #f4877b;
+$light-red: #f9bab4;
+$accent-red: #fdeeec;
+
+
+// Spacing
+$base-space: 16px;
+
+$small: $base-space * 0.75; // 12
+$smaller: $base-space * 0.5; // 8
+$smallest: $base-space * 0.25; // 4
+
+$large: $base-space * 1.25; // 20
+$larger: $base-space * 2; // 32
+$largest: $base-space * 4; // 64

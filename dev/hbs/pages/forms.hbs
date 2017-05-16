@@ -1,0 +1,103 @@
+{{#> layout }}
+
+{{#*inline "content-block"}}
+
+<section class="forms">
+  <h2>Form Elements</h2>
+
+  <h3>Input Fields</h3>
+  <div class="usi-form-group text">
+    <label class="text-label">Form Field Label</label>
+    <input type="text" class="text-input" />
+  </div>
+
+  <div class="usi-form-group text">
+    <input type="text" disabled="disabled" />
+  </div>
+
+  <div class="usi-form-group text">
+    <textarea></textarea>
+  </div>
+
+  <h3>Validation Fields</h3>
+  <div class="usi-form-group text input-warning">
+    <input type="text" class="text-input" />
+    <div>CAPS Lock is on!</div>
+  </div>
+
+  <div class="usi-form-group text input-error">
+    <input type="text" class="text-input" />
+    <div>Not a valid email address</div>
+  </div>
+
+  <div class="usi-form-group text input-success">
+    <input type="text" class="text-input" />
+  </div>
+
+  <h3>Selection</h3>
+
+  <select>
+    <option>Dropdown Field</option>
+    <option>Select One</option>
+    <option>Select Two</option>
+    <option>Select Three</option>
+  </select>
+
+  <div class="usi-horizontal-select">
+    <input type="radio" name="horizontal-select-example" id="opt-1" />
+    <label for="opt-1">Lions</label>
+
+    <input type="radio" name="horizontal-select-example" id="opt-2" />
+    <label for="opt-2">Tigers</label>
+
+    <input type="radio" name="horizontal-select-example" id="opt-3" />
+    <label for="opt-3">Bears</label>
+
+    <input type="radio" name="horizontal-select-example" id="opt-4" />
+    <label for="opt-4">Oh My</label>
+  </div>
+
+  <div class="usi-form-group check">
+    <input type="checkbox" id="check-sample-1" />
+    <label for="check-sample-1"><i class="fa fa-check"></i></label>
+    <label for="check-sample-1">Checkbox Item</label>
+  </div>
+
+  <div class="usi-form-group radio">
+    <input type="radio" name="radio-sample" id="radio-sample-1" />
+    <label for="radio-sample-1"></label>
+    <label for="radio-sample-1">Checkbox Item</label>
+  </div>
+  <div class="usi-form-group radio">
+    <input type="radio" name="radio-sample" id="radio-sample-2" />
+    <label for="radio-sample-2"></label>
+    <label for="radio-sample-2">Checkbox Item</label>
+  </div>
+
+  <div class="usi-form-group radio highlight">
+    <input type="radio" name="radio-sample-highlight" id="radio-sample-hl-1" />
+    <label for="radio-sample-hl-1"></label>
+    <label for="radio-sample-hl-1">Checkbox Item</label>
+  </div>
+  <div class="usi-form-group radio highlight">
+    <input type="radio" name="radio-sample-highlight" id="radio-sample-hl-2" />
+    <label for="radio-sample-hl-2"></label>
+    <label for="radio-sample-hl-2">Checkbox Item</label>
+  </div>
+
+  <div class="usi-form-group check highlight">
+    <input type="checkbox" name="check-sample-highlight" id="check-sample-hl-1" />
+    <label for="check-sample-hl-1"><i class="fa fa-check"></i></label>
+    <label for="check-sample-hl-1">Checkbox Item</label>
+  </div>
+  <div class="usi-form-group check highlight">
+    <input type="checkbox" name="check-sample-highlight" id="check-sample-hl-2" />
+    <label for="check-sample-hl-2"><i class="fa fa-check"></i></label>
+    <label for="check-sample-hl-2">Checkbox Item</label>
+  </div>
+
+</section>
+
+{{/inline}}
+
+{{/ layout}}
