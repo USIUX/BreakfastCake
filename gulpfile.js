@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var handlebars = require('gulp-compile-handlebars');
 var rename = require('gulp-rename');
 
-gulp.task('default', ['watch', 'copy', 'templates']);
+gulp.task('default', ['watch', 'sass', 'copy', 'templates']);
 
 gulp.task('sass', function() {
 	return gulp.src('dev/sass/**/*.scss')
