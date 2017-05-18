@@ -28,6 +28,7 @@ h2 {
 }
 h3 {
   font-size: 21px;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 h4 {
@@ -62,6 +63,16 @@ p {
 }
 
 // Forms
+.push{
+  margin-top: 1%;
+  /*margin: 0 auto;*/
+  margin-right: auto;
+}
+.form_horizontal_set{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .usi-form-group {
   position: relative;
   margin-bottom: 1rem;
@@ -77,7 +88,7 @@ p {
   input[type="text"], textarea {
     padding: 12px;
     border-radius: 3px;
-    border: 1px solid $mid-gray;
+    border: 2px solid $mid-gray;
     margin-bottom: 0.5rem;
     font-size: 14px;
     position: relative;
@@ -91,28 +102,133 @@ p {
       box-shadow: 0 0 5px 0 $blue-muted-2;
     }
   }
+  input[type="user"] { 
+    font-family: FontAwesome;
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+  }
+  input[type="numeric"], textarea {
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+    width: 50%;
+    margin-bottom: 0.5rem;
+
+  }
+
+  input[type="percentage"], textarea {
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+    width: 40%;
+    margin-bottom: 0.5rem;
+  }
+
+
+  &.active {
+
+    input {
+       border: 2px solid #2A81EA;
+       
+    }
+   
+    
+  }
+  &.required{
+
+    input{
+      border: 1px solid red;
+    }
+
+  }
 
   &.input-warning {
 
     input {
       border-color: $dark-orange;
+
     }
 
-    &:after {
+    >div:before {
+      font-family: FontAwesome;
       color: $dark-orange;
       content: '\f071';
+      display: inline-block;
+      margin-right: 4px;
     }
+
+
+  }
+  &.user_head{
+    input{
+      /*background-color: green;*/
+      padding-left: 15%;
+      box-sizing: border-box;
+    }
+    >input:before{
+
+      /*color: red;
+      font-family: FontAwesome;
+      color: $dark-orange;
+      content: '\f071';
+      display: inline-block;
+      margin-right: 4px;*/
+    }
+  }
+  &.spacer_right{
+    input{
+      padding-right: 15%;
+      box-sizing: border-box;
+      
+    }
+    &input:after{
+      font-family: FontAwesome;
+      color: $dark-orange;
+      content: '\f071';
+      display: inline-block;
+      margin-left: 4px;
+      position:absolute;
+      top: 30%;
+      right: 5%;
+      z-index: 100;
+    };
+
+  }
+
+
+  #togs{
+    display:flex;
+    flex-direction: row;
+  }
+  .warning_text{
+
+    input{
+    }
+
+    &:before {
+       color: $dark-orange;
+      content: '\f071';
+    }
+
+  }
+  .notify_field{
+    font-style: italic;
+    display: inline-block;
   }
 
   &.input-error {
 
     input {
-      border-color: $dark-red;
+      /*border-color: $dark-red;*/
     }
 
-    &:after {
-      color: $dark-red;
+    >div:before {
+      font-family: FontAwesome;
       content: '\f06a';
+      color: $dark-red;
+      display: inline-block;
+      margin-right: 14px;
     }
   }
 
@@ -122,10 +238,44 @@ p {
       border-color: $dark-green;
     }
 
-    &:after {
-      color: $dark-green;
+    >div:before{
+      font-family: FontAwesome;
       content: '\f058';
+      color: $dark-green;
+      display: inline-block;
+      margin-right: 4px;
     }
+
+    }
+  }
+
+    &.bleeder{
+      /*background-color: blue;*/
+      border: 1px solid $mid-gray;
+      padding: 20px;
+     /* background-clip: red;*/
+
+    input:checked + label {
+      box-shadow: 0 0 0 5px $dark-blue inset;
+    }
+
+    input:checked + label + label {
+      font-weight: bold;
+      color: white;
+    }
+
+    input:checked + label + label:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #0562D2;
+    }
+  
+   
   }
 
   &.input-warning:after, &.input-error:after, &.input-success:after {
@@ -139,6 +289,28 @@ p {
     line-height: 42px;
     font-size: 20px;
   }
+
+  .split_groups{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+  }
+  #first_check{
+     width: 30%;
+     height: auto;
+  }
+  #second_check{
+     width: 70%;
+  }
+  #first_radio{
+     width: 30%;
+     height: auto;
+  }
+  #second_radio{
+     width: 70%;
+  }
+
 
   &.check {
     input {
@@ -159,7 +331,7 @@ p {
     label {
       display: inline-block;
     }
-  }
+  
 
   &.radio {
     input {
@@ -192,6 +364,7 @@ p {
 
     input:checked + label + label {
       font-weight: bold;
+      color:white;
     }
 
     input:checked + label + label:before {
@@ -202,9 +375,13 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background-color: $blue-muted-1;
+      background-color: #0562D2;
+      
+      /*$blue-muted-1*/
     }
   }
+
+
 }
 
 .usi-horizontal-select {
@@ -243,21 +420,38 @@ button.usi-button {
   background-color: $primary-blue;
   border: 1px solid $white;
   border-radius: 3px;
-  padding: 12px;
   margin: 0 20px 20px 0;
+  line-height: 38px;
+  padding: 0 16px;
 
   &.small {
-    padding: 9px;
+    
+    
   }
 
   &.large {
-    padding: 19px;
     font-size: 16px;
   }
 
   &[disabled="disabled"] {
     background-color: $blue-muted-2;
   }
+   &.reduce_out{
+      /*border-color: white;*/
+      background-color: red;
+      border: none;
+    
+
+        i {
+         /*margin-right: .5%;*/
+          
+        }
+        span{
+          margin-left: 8px;
+        }
+
+      }
+
 
   &.secondary {
     background-color: $white;
@@ -267,25 +461,62 @@ button.usi-button {
     &[disabled="disabled"] {
       color: $blue-muted-3;
     }
-
     &.icon {
-      i {
-        background-color: $white;
-        color: $primary-blue;
-        border-right: 1px solid $primary-blue;
-      }
 
-      &.right i {
-        border-left: 1px solid $primary-blue;
-        border-right: none;
-      }
+    i {
+      background-color: $white;
+      color: $primary-blue;
+      border-right: solid 1px $primary-blue;
+
 
     }
+    &.icon_left{
+      border-left: solid 1px $primary-blue;
+      border-right: none;
+    }
+    &.reversal{
+      background-color: $primary-blue;
+      color: white;
+    }
+   
+
+
+    
+  }
+  }
+
+  &.secondary_left {
+    background-color: $white;
+    color: $primary-blue;
+    border-color: currentColor;
+
+    &[disabled="disabled"] {
+      color: $blue-muted-3;
+    }
+    &.icon {
+
+    i {
+      background-color: $white;
+      color: $primary-blue;
+      border-left: solid 1px $primary-blue;
+      border-right: none;
+
+
+    }
+    &.reversal{
+      background-color: $primary-blue;
+      color: white;
+    }
+
+
+    
+  }
   }
 
   &.icon {
     padding: 0;
     overflow: hidden;
+    line-height: 0;
 
     i {
       background-color: $dark-blue;
@@ -298,30 +529,39 @@ button.usi-button {
     i {
       width: 44px;
       line-height: 38px;
+      float:left;
     }
 
     span {
-      padding: 12px;
+     /* padding: 12px;*/
     }
 
     &.small i {
       width: 33px;
-      line-height: 33px;
+      line-height: 28px;
     }
     &.small span {
-      padding: 9px;
+      padding: 0 12px;
+      line-height: 28px;
+
+      /*padding: 9px;*/
+    }
+    &.reg span{
+        line-height: 38px;
+        padding: 0 16px;
+    }
+    &.large span{
+       padding: 0 20px;
+      line-height: 46px;
+    }
+    &.large i{
+      line-height: 46px;
+    }
+    &.right i{
+      /*background-color: red;*/
+      float: right;
     }
 
-    &.large i {
-      line-height: 41px;
-    }
-
-    &.right {
-      i {
-        float: right;
-
-      }
-    }
   }
 }
 
@@ -401,3 +641,44 @@ header.usi-header {
     line-height: 50px;
   }
 }
+
+
+
+
+
+  .usi-icon-left input {
+    /*padding-left: 16px;*/
+  }
+  
+  .usi-icon-left:before{
+      font-family: FontAwesome;
+      color: $dark-orange;
+      content: '\f071';
+      display: inline-block;
+      margin-right: 4px;
+      position:absolute;
+      top: 30%;
+      left: 5%;
+      z-index: 100;
+  }
+  .usi-icon-right{
+    input{
+
+    }
+ 
+  }
+
+  .usi-icon-right:after{
+      font-family: FontAwesome;
+      color: $dark-orange;
+      content: '\f071';
+      display: inline-block;
+      margin-left: 4px;
+      position:absolute;
+      top: 30%;
+      right: 5%;
+      z-index: 100;
+
+    }
+
+  

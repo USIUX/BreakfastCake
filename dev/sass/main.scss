@@ -41,6 +41,18 @@ header.sg-layout {
 
 }
 
+h3{
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+h4{
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+
+
 nav.sg-layout {
   width: 275px;
 
@@ -155,3 +167,31 @@ main.usi-brand {
     clear: both;
   }
 }
+
+/*Ryan's Additions*/
+
+.holder_measure{
+  width: 100%;
+  background-color:yellow;
+  height: 20%;
+  margin-bottom: 3%;
+}
+.button_icon_shelf{
+  margin-top: 3%;
+
+}
+#dis_link_header{
+  color: #B6B6B6;
+}
+#measurement_link{
+  width: 30%;
+}
+
+.des_text{
+  margin: 1% 0 3% 0;
+}
+.button_grp{
+  /*background-color: purple;*/
+  margin-bottom: 3.5%;
+}
+

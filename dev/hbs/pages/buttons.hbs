@@ -5,12 +5,43 @@
   <section class="buttons">
     <h2>Buttons</h2>
 
-    <h3>Primary Button</h3>
-    <button class="usi-button small">Primary Button</button>
-    <button class="usi-button">Primary Button</button>
-    <button class="usi-button large">Primary Button</button>
+    <div class="button_grp">
+      <h3>Primary Button</h3>
+      <p class = "des_text">This button is the default and Call to Action button. Main Color #0067b1. 1 pt Stroke Color #005ea6. Opens Sans Regular 14px.</p>
+      <button class="usi-button small">Primary Button</button>
+      <button class="usi-button">Primary Button</button>
+      <button class="usi-button large">Primary Button</button>
+    </div>
 
-    <div class="code-container">
+    <div class="button_grp">
+      <h4>Primary Disabled State</h4>
+      <p class = "des_text">Disabled Color #99C3E3. Open Sans Regular 14 px</p>
+      <button class="usi-button small" disabled="disabled">Primary Button</button>
+      <button class="usi-button" disabled="disabled">Primary Button</button>
+      <button class="usi-button large" disabled="disabled">Primary Button</button>
+    </div>
+
+    <div class="button_grp">
+      <h3>Secondary Button</h3>
+      <p class = "des_text">This button is the secondary button. main Color #0067b1. 1 pt Stroke Color #005ea6. Open Sans regular 14 px</p>
+      <button class="usi-button secondary small">Secondary Button</button>
+      <button class="usi-button secondary">Secondary Button</button>
+      <button class="usi-button secondary large">Secondary Button</button>
+    </div>
+
+    <!--  <div id ="text_example_box">
+      <div id ="text_example">
+      <div id ="inner_text_example"> 
+
+        <p> &#60; button class = "button button-icon" href =""&#62; </p>
+        <p>CODE SNIPPET HERE</p>
+        <p> &#60;/button&#62;</p>
+        
+      </div>
+    </div>
+   </div> -->
+
+   <div class="code-container">
       <label for="button-snippit-1">Show sample source</label>
       <input type="checkbox" class="usi-accordion-toggle" id="button-snippit-1" />
       <code class="snippit">
@@ -18,52 +49,137 @@
       </code>
     </div>
 
-    <h4>Primary Disabled State</h4>
-    <button class="usi-button small" disabled="disabled">Primary Button</button>
-    <button class="usi-button" disabled="disabled">Primary Button</button>
-    <button class="usi-button large" disabled="disabled">Primary Button</button>
 
-    <h3>Secondary Button</h3>
-    <button class="usi-button secondary small">Secondary Button</button>
-    <button class="usi-button secondary">Secondary Button</button>
-    <button class="usi-button secondary large">Secondary Button</button>
+    <div class="button_grp">
 
-    <h4>Secondary Disabled State</h4>
-    <button class="usi-button secondary small" disabled="disabled">Secondary Button</button>
-    <button class="usi-button secondary" disabled="disabled">Secondary Button</button>
-    <button class="usi-button secondary large" disabled="disabled">Secondary Button</button>
+      <h4>Secondary Disabled State</h4>
+       <button class="usi-button secondary small" disabled="disabled">Secondary Button</button>
+      <button class="usi-button secondary" disabled="disabled">Secondary Button</button>
+      <button class="usi-button secondary large" disabled="disabled">Secondary Button</button>
 
-    <h3>White Buttons</h3>
+    </div>
+
+        <div class="button_grp">
+
+          <h4>Secondary Disabled State</h4>
+
+          <div class="holder_measure">
+            <p>yo, Primary and secondary icon measurements will be here.</p>
+          </div>
+
+        </div>
+
+    <div class="button_grp">
+        <h3>White Buttons</h3>
+
+        <div class="contrasting-bg">
+          <div id = "white_buittons_pr">
+          <button class="usi-button small">Primary Button</button>
+          <button class="usi-button">Primary Button</button>
+          <button class="usi-button large">Primary Button</button>
+        </div>
+
+        <div id = "white_buttons_se">
+          <button class="usi-button secondary small">Secondary Button</button>
+          <button class="usi-button secondary">Secondary Button</button>
+          <button class="usi-button secondary large">Secondary Button</button>
+        </div>
+
+        </div>
+    </div>
+
+
+    <div class="button_grp">
+
+      <h3>Transparent Buttons</h3>
+      <p class = "des_text">Active Link Color #0067b1, Open Sans Semibold 14px</p>
+
+      <h5 id="link_header">Link Button</h5>
+       <p class = "des_text">Disabled Link Color #717073, Open Sans Semibold 14px</p>
+
+       <h5 id="dis_link_header">Disabled Link Button</h5>
+
+       <h5 id="link_icon">Link with Icon</h5>
+
+        <button class="usi-button large secondary reduce_out"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+    
+      
+
+        <div class="holder_measure" id="measurement_link">
+            <p>yo, icons with measurements will be across from the image above.</p>
+        </div>
+
+       <div id="link_icon" class="holder_measure"></div>
+
+      </div>
+        
+     <div class="button_grp">
+
+        <h3>Buttons With Icons</h3>
+
+        <div class="button_icon_shelf "id="left_prim">
+
+          <button class="usi-button small icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+          <button class="usi-button icon reg left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+          <button class="usi-button large icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+
+        </div>
+
+
+
+          <div class="button_icon_shelf" id="left_sec">
+
+              <button class="usi-button secondary small secondary icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+              <button class="usi-button secondary reg icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+             <button class="usi-button secondary large icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+
+          </div>
+
+
+
+            <div id="link_icon" class="holder_measure">
+                <p>yo, buttons with measurements will go here.</p>
+             </div>
+
+     </div>
+
+     <div class="contrasting-bg">
+        <button class="usi-button small icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+
+      <!-- issue lies @ 110!!!! -->
+
+        <button class="usi-button large secondary reversal icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+     </div>
+
+     <div class="button_grp">
+
+         <div class="button_icon_shelf" id="right_prim">
+
+            <button class="usi-button small icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+            <button class="usi-button reg icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+            <button class="usi-button large icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+
+          </div>
+
+          <div class="button_icon_shelf" id="right_sec">
+
+            <button class="usi-button small icon secondary_left right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+            <button class="usi-button reg icon secondary_left right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+            <button class="usi-button large icon secondary_left right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+
+          </div>
+
+      </div>
+
     <div class="contrasting-bg">
-      <button class="usi-button small">Primary Button</button>
-      <button class="usi-button">Primary Button</button>
-      <button class="usi-button large">Primary Button</button>
+        <button class="usi-button small icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
 
-      <button class="usi-button secondary small">Secondary Button</button>
-      <button class="usi-button secondary">Secondary Button</button>
-      <button class="usi-button secondary large">Secondary Button</button>
-    </div>
+      <!-- issue lies @ 110!!!! -->
 
-    <h3>Transparent Buttons</h3>
+        <button class="usi-button large icon secondary_left reversal right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
+     </div>
 
-    <h3>Buttons With Icons</h3>
-    <button class="usi-button small icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-    <button class="usi-button icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-    <button class="usi-button large icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
 
-    <button class="usi-button secondary small icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-    <button class="usi-button secondary icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-    <button class="usi-button secondary large icon left"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-
-    <div>
-      <button class="usi-button small icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-      <button class="usi-button icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-      <button class="usi-button large icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-
-      <button class="usi-button secondary small icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-      <button class="usi-button secondary icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-      <button class="usi-button secondary large icon right"><i class="fa fa-shopping-cart"></i><span>Primary Button</span></button>
-    </div>
   </section>
 
 {{/inline}}
