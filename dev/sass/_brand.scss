@@ -28,8 +28,12 @@ h2 {
 }
 h3 {
   font-size: 21px;
+<<<<<<< HEAD
   margin-top: 3rem;
   margin-bottom: 2rem;
+=======
+  margin-bottom: 1rem;
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 }
 h4 {
   font-size: 18px;
@@ -63,16 +67,6 @@ p {
 }
 
 // Forms
-.push{
-  margin-top: 1%;
-  /*margin: 0 auto;*/
-  margin-right: auto;
-}
-.form_horizontal_set{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .usi-form-group {
   position: relative;
   margin-bottom: 1rem;
@@ -88,7 +82,7 @@ p {
   input[type="text"], textarea {
     padding: 12px;
     border-radius: 3px;
-    border: 2px solid $mid-gray;
+    border: 1px solid $mid-gray;
     margin-bottom: 0.5rem;
     font-size: 14px;
     position: relative;
@@ -102,6 +96,7 @@ p {
       box-shadow: 0 0 5px 0 $blue-muted-2;
     }
   }
+<<<<<<< HEAD
   input[type="user"] { 
     font-family: FontAwesome;
     padding: 12px;
@@ -133,14 +128,16 @@ p {
       font-style: normal;
     }
   }
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 
   &.input-warning {
 
     input {
       border-color: $dark-orange;
-
     }
 
+<<<<<<< HEAD
     >div:before {
       font-family: FontAwesome;
       color: $dark-orange;
@@ -200,12 +197,12 @@ p {
     &:before {
        color: $dark-orange;
       content: '\f071';
+=======
+    &:after {
+      color: $dark-orange;
+      content: '\f071';
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
     }
-
-  }
-  .notify_field{
-    font-style: italic;
-    display: inline-block;
   }
 
   &.input-error {
@@ -214,12 +211,9 @@ p {
       border-color: $dark-red;
     }
 
-    >div:before {
-      font-family: FontAwesome;
-      content: '\f06a';
+    &:after {
       color: $dark-red;
-      display: inline-block;
-      margin-right: 14px;
+      content: '\f06a';
     }
   }
 
@@ -229,10 +223,9 @@ p {
       border-color: $dark-green;
     }
 
-    >div:before{
-      font-family: FontAwesome;
-      content: '\f058';
+    &:after {
       color: $dark-green;
+<<<<<<< HEAD
       display: inline-block;
       margin-right: 4px;
     }
@@ -264,9 +257,10 @@ p {
       height: 100%;
       z-index: -1;
       background-color: #0562D2;
+=======
+      content: '\f058';
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
     }
-  
-   
   }
 
   &.input-warning:after, &.input-error:after, &.input-success:after {
@@ -280,28 +274,6 @@ p {
     line-height: 42px;
     font-size: 20px;
   }
-
-  .split_groups{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 3%;
-  }
-  #first_check{
-     width: 30%;
-     height: auto;
-  }
-  #second_check{
-     width: 70%;
-  }
-  #first_radio{
-     width: 30%;
-     height: auto;
-  }
-  #second_radio{
-     width: 70%;
-  }
-
 
   &.check {
     input {
@@ -323,6 +295,7 @@ p {
       display: inline-block;
     }
   }
+<<<<<<< HEAD
 
   .cal_clicked{
     input{
@@ -350,6 +323,8 @@ p {
     
     }
   }
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 
   &.radio {
     input {
@@ -383,7 +358,6 @@ p {
 
     input:checked + label + label {
       font-weight: bold;
-      color:white;
     }
 
     input:checked + label + label:before {
@@ -394,13 +368,15 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background-color: #0562D2;
-      
-      /*$blue-muted-1*/
+      background-color: $blue-muted-1;
     }
+<<<<<<< HEAD
   
 
 
+=======
+  }
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 }
 
 .usi-horizontal-select {
@@ -439,38 +415,21 @@ button.usi-button {
   background-color: $primary-blue;
   border: 1px solid $white;
   border-radius: 3px;
+  padding: 12px;
   margin: 0 20px 20px 0;
-  line-height: 38px;
-  padding: 0 16px;
 
   &.small {
-    
-    
+    padding: 9px;
   }
 
   &.large {
+    padding: 19px;
     font-size: 16px;
   }
 
   &[disabled="disabled"] {
     background-color: $blue-muted-2;
   }
-   &.reduce_out{
-      /*border-color: white;*/
-      background-color: red;
-      border: none;
-    
-
-        i {
-         /*margin-right: .5%;*/
-          
-        }
-        span{
-          margin-left: 8px;
-        }
-
-      }
-
 
   &.secondary {
     background-color: $white;
@@ -480,6 +439,7 @@ button.usi-button {
     &[disabled="disabled"] {
       color: $blue-muted-3;
     }
+<<<<<<< HEAD
     &.icon {
 
     i {
@@ -499,44 +459,27 @@ button.usi-button {
     }
   
    
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 
-
-    
-  }
-  }
-
-  &.secondary_left {
-    background-color: $white;
-    color: $primary-blue;
-    border-color: currentColor;
-
-    &[disabled="disabled"] {
-      color: $blue-muted-3;
-    }
     &.icon {
+      i {
+        background-color: $white;
+        color: $primary-blue;
+        border-right: 1px solid $primary-blue;
+      }
 
-    i {
-      background-color: $white;
-      color: $primary-blue;
-      border-left: solid 1px $primary-blue;
-      border-right: none;
-
+      &.right i {
+        border-left: 1px solid $primary-blue;
+        border-right: none;
+      }
 
     }
-    &.reversal{
-      background-color: $primary-blue;
-      color: white;
-    }
-
-
-    
-  }
   }
 
   &.icon {
     padding: 0;
     overflow: hidden;
-    line-height: 0;
 
     i {
       background-color: $dark-blue;
@@ -549,39 +492,30 @@ button.usi-button {
     i {
       width: 44px;
       line-height: 38px;
-      float:left;
     }
 
     span {
-     /* padding: 12px;*/
+      padding: 12px;
     }
 
     &.small i {
       width: 33px;
-      line-height: 28px;
+      line-height: 33px;
     }
     &.small span {
-      padding: 0 12px;
-      line-height: 28px;
-
-      /*padding: 9px;*/
-    }
-    &.reg span{
-        line-height: 38px;
-        padding: 0 16px;
-    }
-    &.large span{
-       padding: 0 20px;
-      line-height: 46px;
-    }
-    &.large i{
-      line-height: 46px;
-    }
-    &.right i{
-      /*background-color: red;*/
-      float: right;
+      padding: 9px;
     }
 
+    &.large i {
+      line-height: 41px;
+    }
+
+    &.right {
+      i {
+        float: right;
+
+      }
+    }
   }
 }
 
@@ -666,6 +600,7 @@ header.usi-header {
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -1052,3 +987,5 @@ header.usi-header {
 
 
 
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
