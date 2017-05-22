@@ -29,9 +29,12 @@ h2 {
 h3 {
   font-size: 21px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-top: 3rem;
   margin-bottom: 2rem;
 =======
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
   margin-bottom: 1rem;
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 }
@@ -97,6 +100,7 @@ p {
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   input[type="user"] { 
     font-family: FontAwesome;
     padding: 12px;
@@ -130,6 +134,8 @@ p {
   }
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 
   &.input-warning {
 
@@ -137,6 +143,7 @@ p {
       border-color: $dark-orange;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     >div:before {
       font-family: FontAwesome;
@@ -202,6 +209,11 @@ p {
       color: $dark-orange;
       content: '\f071';
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
+=======
+    &:after {
+      color: $dark-orange;
+      content: '\f071';
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
     }
   }
 
@@ -225,6 +237,7 @@ p {
 
     &:after {
       color: $dark-green;
+<<<<<<< HEAD
 <<<<<<< HEAD
       display: inline-block;
       margin-right: 4px;
@@ -257,6 +270,9 @@ p {
       height: 100%;
       z-index: -1;
       background-color: #0562D2;
+=======
+      content: '\f058';
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
       content: '\f058';
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
@@ -296,6 +312,7 @@ p {
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   .cal_clicked{
     input{
@@ -323,6 +340,8 @@ p {
     
     }
   }
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 
@@ -371,9 +390,13 @@ p {
       background-color: $blue-muted-1;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 
 
+=======
+  }
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
   }
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
@@ -440,6 +463,7 @@ button.usi-button {
       color: $blue-muted-3;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     &.icon {
 
     i {
@@ -459,6 +483,8 @@ button.usi-button {
     }
   
    
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 
@@ -600,6 +626,7 @@ header.usi-header {
 }
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -987,5 +1014,7 @@ header.usi-header {
 
 
 
+=======
+>>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
