@@ -89,7 +89,10 @@ main.usi-brand {
 
 .palette-group {
   @extend .clearfix;
+  display: flex;
+  margin-bottom: 3%;
 }
+
 
 .palette-example {
   float: left;
@@ -97,6 +100,7 @@ main.usi-brand {
   height: 150px;
   border: 1px solid $mid-gray;
   margin-right: 20px;
+  position:relative;
 
   &.dark-purple {
     background-color: $dark-purple;
@@ -110,6 +114,97 @@ main.usi-brand {
   &.accent-purple {
     background-color: $accent-purple;
   }
+  &.primary-blue{
+    background-color: $primary-blue;
+  }
+  &.mid-gray_2{
+    background-color: $mid-gray2;
+  }
+  &.light-gray{
+    background-color: $light-gray;
+  }
+  &.dark-blue{
+    background-color: $dark-blue;
+  }
+  &.light-blue{
+    background-color: $light-blue;
+  }
+  &.blue-muted-1{
+    background-color: $blue-muted-1;
+  }
+  &.blue-muted-2{
+    background-color: $blue-muted-2;
+  }
+  &.blue-muted-3{
+    background-color: $blue-muted-3;
+  }
+  &.darkest-gray{
+    background-color: $darkest-gray;
+  }
+  &.darker-gray{
+    background-color: $darker-gray;
+  }
+  &.dark-gray{
+    background-color: $dark-gray;
+  }
+  &.white{
+    background-color: $white;
+  }
+  &.lightest-gray{
+    background-color: $lightest-gray;
+  }
+  &.light-gray{
+    background-color: $light-gray;
+  }
+  &.dark-purple{
+    background-color: $dark-purple;
+  }
+  &.mid-purple{
+    background-color: $mid-purple;
+  }
+  &.light-purple{
+    background-color: $light-purple;
+  }
+  &.accent-purple{
+    background-color: $accent-purple;
+  }
+  &.dark-orange{
+    background-color: $dark-orange;
+  }
+  &.mid-orange{
+    background-color: $mid-orange;
+  }
+  &.light-orange{
+    background-color: $light-orange;
+  }
+  &.accent-orange{
+    background-color: $accent-orange;
+  }
+  &.dark-green{
+    background-color: $dark-green;
+  }
+  &.mid-green{
+    background-color: $mid-green;
+  }
+  &.light-green{
+    background-color: $light-green;
+  }
+  &.accent-green{
+    background-color: $accent-green;
+  }
+  &.dark-red{
+    background-color: $dark-red;
+  }
+  &.mid-red{
+    background-color: $mid-red;
+  }
+  &.light-red{
+    background-color: $light-red;
+  }
+  &.accent-red{
+    background-color: $accent-red;
+  }
+
 }
 
 .contrasting-bg {
@@ -193,5 +288,18 @@ main.usi-brand {
 .button_grp{
   /*background-color: purple;*/
   margin-bottom: 3.5%;
+}
+.usi-palette-text{
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  position:absolute;
+  bottom: 0;
+  border-top: .5px solid $mid-gray;
+}
+.color_head{
+   display: block;
+   margin: 7%;
+
 }
 

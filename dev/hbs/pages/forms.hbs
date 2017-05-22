@@ -14,8 +14,9 @@
         <input type="text" class="text-input" placeholder="Form Field input"/>
       </div>
 
-      <div class="usi-form-group text push">
+      <div class="usi-form-group text push label-block">
         <!-- <label class="text-label">Form Field Label</label> -->
+        <div class="notify_field"><p>Form field with label!</p></div>
         <input type="text" class="text-input" placeholder="Form Field input"/>
       </div>
 
@@ -32,12 +33,12 @@
 
   <div class="form_horizontal_set" id="bottom_set">
 
-      <div class="usi-form-group text push required">
+      <div class="usi-form-group text push usi-icon-right required">
         <!-- <label class="text-label">Form Field Label</label> -->
-        <input type="text" class="text-input" placeholder="Form Field input *"/>
+        <input type="required" class="text-input" placeholder="Form Field input "/>
       </div>
 
-      <div class="usi-form-group text push user_head usi-icon-left">
+      <div class="usi-form-group text push user_head usi-icon-left usi-user">
         <!-- <label class="text-label">Form Field Label</label> -->
 
         <input type="text" class="user text-input" placeholder=" Form Field input" ></input>
@@ -46,15 +47,16 @@
         
       </div>
 
-      <div class="usi-form-group text push user_head usi-icon-left">
+      <div class="usi-form-group text push user_head usi-icon-left money">
         <!-- <label class="text-label">Form Field Label</label> -->
         <input type="numeric" class="text-input" placeholder="$1000.00"/>
       </div>
 
       <div class="usi-form-group text push usi-icon-right">
-        <input type="percentage" placeholder="100%"><div></div>
-      </input>
+        <input type="percentage" placeholder="100%"></input>
       </div>
+
+    <div id="changes"></div>
 
   </div>
 
@@ -70,7 +72,7 @@
 
   <div class="usi-form-group text input-error">
     <input type="text" class="text-input" />
-    <div><p class="notify_field">Successful!</p></div>
+    <div><p class="notify_field">Not a valid email address</p></div>
   </div>
 
   <div class="usi-form-group text input-success">
@@ -180,17 +182,42 @@
 
   <h3>Date and Time picker</h3>
 
-    <div class="usi-form-group text push">
-        <!-- <label class="text-label">MM/DD/YYYY</label> -->
-        <input type="text" class="text-input" placeholder="MM/DD/YYYY" />
-    </div>
-    <div class="usi-form-group text push">
+  <h5>Date Picker</h5>
+<!-- 
+    <div class="usi-form-group text push required">
+        <label class="text-label">MM/DD/YYYY</label>
+        <input type="calendar" class="text-input" placeholder="MM/DD/YYYY" />
+    </div> -->
+
+    <div class="form_horizontal_set">
+    <div class="usi-form-group text push usi-calendar">
         <!-- <label class="text-label">Form Field Label</label> -->
-        <input type="text" class="text-input" />
+        <input type="calendar" class="text-input" placeholder="MM/DD/YYYY "/>
+      </div>
+
+    <div class="usi-form-group text push usi-calendar cal-clicked">
+        <input type="calendar" class="text-input" placeholder="3/12/2017" />
     </div>
 
-    <div id="changed"></div>
-    <div id="changed_2"></div>
+    </div>
+
+    <h5>Time Picker</h5>
+
+    <div class="form_horizontal_set">
+    <div class="usi-form-group text push usi-calendar">
+        <!-- <label class="text-label">Form Field Label</label> -->
+        <input type="calendar" class="text-input" placeholder="MM/DD/YYYY "/>
+      </div>
+
+    <div class="usi-form-group text push usi-calendar cal_clicked">
+        
+        <input type="calendar" class="text-input" placeholder="3/12/2017" />
+        
+
+
+    </div>
+
+    </div>
   
 
 </section>
