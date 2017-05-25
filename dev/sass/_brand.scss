@@ -32,11 +32,14 @@ h3 {
 <<<<<<< HEAD
   margin-top: 3rem;
   margin-bottom: 2rem;
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
 =======
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
   margin-bottom: 1rem;
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
+=======
+>>>>>>> changed
 }
 h4 {
   font-size: 18px;
@@ -70,12 +73,47 @@ p {
 }
 
 // Forms
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
+=======
+.push{
+  margin-top: 1%;
+  margin-right: auto;
+}
+#usi-pargraph{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4%;
+
+  input{
+
+  }
+  p{
+    margin: 0 auto;
+    display: inline-block;
+  }
+}
+#usi-para-body{
+  margin-top: 4%;
+  line-height: 22px;
+}
+#usi-para-body-min{
+  margin-top: 4%;
+  line-height: 18px;
+  font-size: 12px;
+}
+>>>>>>> changed
 .usi-form-group {
   position: relative;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
 
   label, input[type="text"] {
     display: block;
+  }
+  .footnote-left{
+    margin-left: 0 0;
   }
 
   label {
@@ -107,6 +145,10 @@ p {
     border-radius: 3px;
     border: 2px solid $mid-gray;
   }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
+=======
+
+>>>>>>> changed
   
 
   &.active {
@@ -157,18 +199,13 @@ p {
   }
   &.user_head{
     input{
-      /*background-color: green;*/
+      
       padding-left: 15%;
       box-sizing: border-box;
     }
     >input:before{
 
-      /*color: red;
-      font-family: FontAwesome;
-      color: $dark-orange;
-      content: '\f071';
-      display: inline-block;
-      margin-right: 4px;*/
+     
     }
   }
   &.spacer_right{
@@ -177,6 +214,7 @@ p {
       box-sizing: border-box;
       
     }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
     /*&input:after{
       font-family: FontAwesome;
       color: $dark-orange;
@@ -188,6 +226,9 @@ p {
       right: 5%;
       z-index: 100;
     };*/
+=======
+    
+>>>>>>> changed
 
   }
 
@@ -245,12 +286,45 @@ p {
 
     }
   }
+  #input-with-header{
+    display: flex;
+    flex-direction: column;
+  }
 
     &.bleeder{
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
       /*background-color: blue*/
+=======
+>>>>>>> changed
       border: 1px solid $mid-gray;
-      padding: 20px;
-     /* background-clip: red;*/
+     position: relative;
+     display: flex;
+
+    input:checked + label {
+      box-shadow: 0 0 0 5px $dark-blue inset;
+    }
+
+    input:checked + label + label {
+      font-weight: bold;
+      color: white;
+    }
+
+    input:checked + label + label:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: #0562D2;
+    }
+  
+   
+  }
+  &.bleeder_2{
+     position: relative;
+     display: flex;
 
     input:checked + label {
       box-shadow: 0 0 0 5px $dark-blue inset;
@@ -291,9 +365,43 @@ p {
     font-size: 20px;
   }
 
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
+=======
+  .split_groups{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+  }
+  .check_split_child{
+ /*   display: flex;
+    flex-direction: row;*/
+    margin-bottom: 24px;
+    
+  }
+  #first_check{
+     width: 30%;
+     height: auto;
+  }
+  #second_check{
+     width: 70%;
+  }
+  #first_radio{
+     width: 30%;
+     height: auto;
+  }
+  #second_radio{
+     width: 70%;
+  }
+
+
+>>>>>>> changed
   &.check {
+    margin: 0 auto;
+    width: 100%;
     input {
       display: none;
+
 
       & + label {
         color: $white;
@@ -304,13 +412,19 @@ p {
 
       &:checked + label {
         background-color: $dark-gray;
+        
       }
+      
+      
     }
 
     label {
       display: inline-block;
+      padding-left: 44px;
+
     }
   }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -344,6 +458,66 @@ p {
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
+=======
+  .usi-check-lighter{
+   padding: 2px;
+   position: absolute;
+   left: 12px;
+   top: 24px;
+  
+>>>>>>> changed
+
+
+  }
+  
+  .usi-check-lighter-radio{
+   padding: 2px;
+   position: absolute;
+   left: 12px;
+   top: 24px;
+
+  
+
+
+  }
+
+  .usi-check{
+   width: 100%;
+   /*padding:14px;*/
+   line-height: 68px;
+   margin: 0;
+   /*padding-left: 12px;*/
+   
+   
+  }
+
+  .usi-cal-clicked{
+    input{
+     display: inline-block;
+    }
+  /*
+   label{
+        color: $white;
+        border: 1px solid green;
+        border-radius: 3px;
+        padding: 2px;
+        width: 20%;
+    }*/
+     & + label{
+        border: 1px solid green;
+        border-radius: 3px;
+        padding: 2px;
+        width: 20%;
+        display: inline-block;
+        content: '/f10c';
+        max-height: 44px;
+
+    }
+      &:checked + label{
+      border: 3px solid red;
+    
+    }
+  }
 
   &.radio {
     input {
@@ -354,6 +528,7 @@ p {
         border: 1px solid $mid-gray;
         border-radius: 100%;
         padding: 9px;
+        position: absolute;
       }
 
       &:checked + label {
@@ -363,13 +538,21 @@ p {
 
     label {
       display: inline-block;
+      padding-left: 44px;
+      left: 16px;
+      top: 28px;
     }
   }
 
   &.highlight {
     border: 1px solid $mid-gray;
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
     padding: 20px;
     display: flex;
+=======
+    display: flex;
+    
+>>>>>>> changed
 
     input:checked + label {
       box-shadow: 0 0 0 5px $dark-blue inset;
@@ -389,8 +572,11 @@ p {
       z-index: -1;
       background-color: $blue-muted-1;
     }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+>>>>>>> changed
   
 
 
@@ -563,6 +749,22 @@ table.usi-table {
   td {
     border: 1px solid $mid-gray;
     padding: 1rem;
+
+    input{
+
+    }
+
+    >div{
+      display: flex;
+      flex-direction:row;
+      padding: 10px;
+
+      p{
+       margin: 0 auto;
+
+      }
+
+    }
   }
 
   .borderless {
@@ -572,6 +774,7 @@ table.usi-table {
   tr:hover td {
     background-color: $light-gray;
   }
+
 }
 
 // Navigation
@@ -583,6 +786,10 @@ header.usi-header {
   display: flex;
   flex-direction: row;
   position: relative;
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
+=======
+  margin-bottom: 4%;
+>>>>>>> changed
 
   & > div {
     padding: 0 20px;
@@ -598,6 +805,8 @@ header.usi-header {
   padding: 0 20px;
   box-shadow: 0 2px 3px 0 $mid-gray;
   margin-bottom: 2rem;
+  position: relative;
+  
 
   &.error {
     background-color: $dark-red;
@@ -605,6 +814,7 @@ header.usi-header {
 
   &.warning {
     background-color: $dark-orange;
+   
   }
 
   &.info {
@@ -614,14 +824,24 @@ header.usi-header {
   & > span {
     margin-left: 30px;
   }
+  .open {
+    width: 30px;
+    height: 2px;
+    float: left;
+  }
 
   .close {
     float: right;
+    width: 20px;
+  }
+  .fa-close {
   }
 
   .fa {
     font-size: 24px;
     line-height: 50px;
+    position: absolute;
+
   }
 }
 
@@ -634,23 +854,310 @@ header.usi-header {
   .usi-icon-left input {
     /*padding-left: 16px;*/
   }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
   .usi-user:before{
     content: '\f2be';
   }
   .money:before{
      content: '\f155';
   }
+=======
+  .usi-user:before {
+    content: '\f2be';
+  }
+
+  .money{
+    input{
+
+    }
+
+  &:before {
+     content: '\f155';
+  }
+
+    }
+>>>>>>> changed
   
   .usi-icon-left:before{
       font-family: FontAwesome;
       /*content: '\f155';*/
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
+=======
       display: inline-block;
       margin-right: 4px;
       position:absolute;
-      top: 30%;
-      left: 5%;
+      top: 14px;
+      left: 14px;
       z-index: 100;
   }
+  .usi-icon-right input{
+      /*background-color: blue;*/
+      input{
+
+
+      }
+      &:after{
+      font-family: FontAwesome;
+      content: '\f0a3';
+      display: inline-block;
+      margin-right: 4px;
+      position:absolute;
+      top: 14px;
+      /*right: 68px;*/
+      z-index: 100;
+  
+      }
+
+}
+
+/*Ryan's nemesis, the input after for the percentage*/
+
+
+  .usi-icon-right:after{
+      font-family: FontAwesome;
+      content: '\f295';
+      display: inline-block;
+      margin-right: 4px;
+      position:absolute;
+      top: 14px;
+      right: 68px;
+      z-index: 100;
+  }
+  input[type="numeric"], textarea {
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+    width: 50%;
+    margin-bottom: 0.5rem;
+    content: 'f155'
+
+  }
+
+  input[type="percentage"]{
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+    margin-bottom: 0.5rem;
+    /*background-color: red;*/
+    padding-right: 31px;
+    width: 50%;
+    position: relative;
+
+    input{
+
+    }
+
+    
+    &:after{
+
+      display:inline-block;
+      font-family: FontAwesome;
+      color: $dark-orange;
+      content: '\f071';
+>>>>>>> changed
+      display: inline-block;
+      margin-right: 4px;
+
+    }
+
+
+  }
+  input[type="required"]{
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+    margin-bottom: 0.5rem;
+    padding-right: 31px
+    /*background-color: red;*/
+    
+    
+
+    input {
+    }
+
+    
+    &:after {
+
+      display:inline-block;
+      font-family: FontAwesome;
+      /*content: '\f071';*/
+      display: inline-block;
+      margin-right: 4px;
+
+    }
+
+
+  }
+  .usi-required {
+        input{
+            border: 2px solid red;
+        }
+
+        &:after {
+          content:'\f069';
+          color: red;
+          font-family:FontAwesome;
+          position: absolute;
+          right: 18px;
+      }
+    }
+  .input-success,.input-warning,.input-error {
+    input {
+      display: inline-block;
+      width: 15%;
+
+    }
+    display: flex;
+    flex-direction: column;
+  }
+   &.required:after{
+      /*width: 15px;
+      margin: 0 auto; */
+      /*justify-content: center;*/
+      font-family: FontAwesome;
+      content: '\f069';
+      color: red;
+      display: inline-block;
+      /*margin-right: 4px;*/
+      position:absolute;
+      z-index: 100;
+
+    }
+     input[type="calendar"]{
+    padding: 12px;
+    border-radius: 3px;
+    border: 2px solid $mid-gray;
+    margin-bottom: 0.5rem;
+    /*background-color: red;*/
+    padding-right: 31px;
+    
+
+    input{
+
+    }
+
+    
+    &:after{
+/*
+      display:inline-block;
+      font-family: FontAwesome;
+      content: '\f071';
+      display: inline-block;
+      margin-right: 4px;*/
+
+    }
+
+
+  }
+    &.usi-calendar{
+
+    input{
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    &.push{
+      margin: 0;
+    }
+   
+
+  }
+   &.usi-calendar:after{
+      width: 15px;
+      margin: 0 auto; 
+      justify-content: center;
+      font-family: FontAwesome;
+      content: '\f073';
+      display: inline-block;
+      /*margin-right: 4px;*/
+      position:relative;
+      top: 30%;
+      right: 15%;
+      z-index: 100;
+      border-left: 1px solid gray;
+      line-height: 40px;
+      /*vertical-align: middle;*/
+      padding: 0 9px;
+      overflow: none;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      max-height: 44px;
+
+    }
+    
+    .page_title_case{
+      margin: 0;
+      position: relative;
+      border-bottom: 1px solid gray;
+      display: flex;
+      flex-direction: row;
+    }
+    .page_title{
+      border-bottom: none;
+    }
+    &.usi-calendar{
+
+    input{
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    &.push{
+      margin: 0;
+    }
+   
+
+  }
+    #cal-clicked:after{
+
+      background-color: #555555;
+      color: white;
+    
+    .page_title{
+      width: 85%;
+      border: none;
+      input{
+
+      }
+      h2{
+        padding-right: 15%;
+
+
+        
+
+      }
+    }
+  }
+
+  #download_text{
+    padding-left: 30px;
+    position: relative;
+    margin: 0;
+  }
+  #download_text:before{
+      display: inline-text;
+      position: absolute;
+      font-family: FontAwesome;
+      content: '\f019';
+      left: 5%;
+  }
+  .usi-palette-sec{
+    margin-bottom: 2rem;
+  }
+  .usi-icon-right-nav{
+    position: relative;
+    input{
+
+    }
+
+  &:after{
+      font-family: FontAwesome;
+      content: '\f078';
+      display: inline-block;
+      position:absolute;
+      right: 30%;
+      z-index: 100;
+      color: white;
+  }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
   .usi-icon-right input{
       /*background-color: blue;*/
       input{
@@ -689,19 +1196,43 @@ header.usi-header {
     /*background-color: red;*/
     padding-right: 31px;
     width: 50%;
+=======
+}
+  .usi-icon-left-nav{
+    position: relative;
+    
+>>>>>>> changed
 
     input{
 
     }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
 
     
     &:after{
 
       display:inline-block;
+=======
+
+  &:before{
       font-family: FontAwesome;
-      color: $dark-orange;
-      content: '\f071';
       display: inline-block;
+      position: absolute;
+      left: 1%;
+      margin-top: 1%;
+      z-index: 100;
+  }
+  #usi-sales{
+    position: relative;
+    input{
+
+    }
+    &:before{
+>>>>>>> changed
+      font-family: FontAwesome;
+      content: '\f095';
+      display: inline-block;
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
       margin-right: 4px;
 
     }
@@ -778,9 +1309,43 @@ header.usi-header {
     
 
     input{
+=======
+      position: absolute;
+      left: 1%;
+      margin-top: 1%;
+      z-index: 100;
+    }
+  }
+>>>>>>> changed
 
+}
+#usi-phone{
+  input{
+
+  }
+  &:before{
+    font-family: FontAwesome;
+    content: '\f095';
+    /*padding-left: 5px;*/
+  }
+  
+}
+#usi-sales-two{
+  width: 10%;
+
+      input{
+
+      }
+
+      &:before{
+      
+        font-family: FontAwesome;
+        content: '\f0ac';
+        padding-right: 10px;
+      
     }
 
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
     
     &:after{
 /*
@@ -958,6 +1523,8 @@ header.usi-header {
       
     }
 
+=======
+>>>>>>> changed
   }
 
 #usi-bell{
@@ -973,7 +1540,11 @@ header.usi-header {
 }
 
 #usi-user{
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
   width: 15%;
+=======
+  width: 17%;
+>>>>>>> changed
   position: absolute;
   right: 2%;
 
@@ -984,12 +1555,24 @@ header.usi-header {
   &:before{
       font-family: FontAwesome;
       content: '\f2be';
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
       font-size: 18px;
       
   }
   p{
     
     padding:0 10px;
+=======
+      font-size: 30px;
+      
+  }
+  &:after{
+    padding-left: 15px;
+  }
+  p{
+    
+    padding:0 19px;
+>>>>>>> changed
   }
 }
 .usi-icon-left-nav , .usi-icon-right-nav{
@@ -1010,6 +1593,7 @@ header.usi-header {
     font-size: 11px;
   }
 }
+<<<<<<< 1f7327e37e7f9d75ec9b8f6cd9880cc64c071c4d
 
 
 
@@ -1018,3 +1602,144 @@ header.usi-header {
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
 =======
 >>>>>>> bf242cf3e7c3b80c8d14b830b6172408552e6b9a
+=======
+#usi-download-button{
+  position: absolute;
+  right: 5%;
+}
+#usi-secondary-focus{
+  margin-right: 6%;
+}
+.push{
+  margin-top: 1%;
+  /*margin: 0 auto;*/
+  margin-right: auto;
+}
+.form_horizontal_set{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.usi-form-group {
+  position: relative;
+  margin-bottom: 1rem;
+
+  label, input[type="text"] {
+    display: block;
+  }
+}
+
+//struggles at :changed//
+  .td-highlight-change {
+     background-color: blue;
+     border: none;
+      input{
+        
+      }
+   
+  
+
+  }
+  .usi-check-lighter-new {
+   padding: 2px;
+   left: 12px;
+   /*background-color: gray;*/
+
+   input{
+
+   }
+   
+
+
+  }
+
+#td-highlight-change {
+  input{
+
+  }
+  .bleeder{
+    border: blue;
+  }
+}
+#td-highlight-change .bleeder{
+  border: 2px solid red;
+}
+.tooltip-sample{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+
+}
+.usi-tool-icon-case {
+  width: 50%;
+  margin:0 auto;
+  display: flex;
+  flex-direction:column;
+
+}
+#yo-yo {
+  /*height: 37px;
+  width: 37px;*/
+  font-family: FontAwesome;
+  display: flex;
+  margin: auto;
+  width: 100%;
+  border-radius: 25px;
+  position: relative;
+  input{
+
+  }
+
+  &::before {
+      font-family: FontAwesome;
+      font-size: 24pt;
+      content: '\f05a';
+      color:  gray;
+      display: flex;
+      border-radius: 80px;
+      margin: auto;
+      z-index: 10;
+    }
+}
+#usi-tooltip {
+  visibility: hidden;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: $darker-gray;
+  width: 160px;
+  /*position*/
+  position: absolute;
+  z-index: 20;
+  top: 130%;
+  left: 32%;
+  padding: 16px;
+  border-radius: 5px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0 2px 10px);
+
+
+  input{
+
+  }
+  
+
+  
+}
+#yo-yo:hover #usi-tooltip {
+    visibility: visible;
+  }
+  #usi-tooltip:before {
+    content: "";
+    color: white;
+    position: absolute;
+    bottom: 100%;
+    left: 48%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent ;
+    /*box-shadow: 3px 3px 3px 3px #888888;*/
+
+
+  }
+>>>>>>> changed
